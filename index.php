@@ -1,5 +1,7 @@
 <?php
 
+header('Content-Type: application/rss+xml; charset=utf-8');
+
 $domain = "https://hacker-news.firebaseio.com/v0/";
 
 // top stories
@@ -41,8 +43,7 @@ $rss = '<?xml version="1.0" encoding="UTF-8" ?>
   <title>RSS for top 5 hacker news</title>
   <link>https://news.ycombinator.com</link>
   <description>RSS for top 5 hacker news</description>
-  </channel>
   ' . $rss_item . '
+  </channel>
 </rss>';
-
 echo $rss;
