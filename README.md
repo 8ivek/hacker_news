@@ -1,4 +1,4 @@
-# Hacker news realtime rss feed
+# RSS for top 5 hacker news
 
 https://news.ycombinator.com
 
