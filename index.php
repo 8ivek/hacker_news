@@ -34,8 +34,6 @@ for ($i = 0; $i < 5; $i++) {
   </item>";
 }
 
-// echo $rss_item;
-
 $rss = '<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 
@@ -48,25 +46,3 @@ $rss = '<?xml version="1.0" encoding="UTF-8" ?>
 </rss>';
 
 echo $rss;
-
-/*$rss = '<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-
-<channel>
-  <title>RSS for top 5 hacker news</title>
-  <link>https://news.ycombinator.com</link>
-  <description>RSS for top 5 hacker news</description>
-  <item>
-    <title>RSS Tutorial</title>
-    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-    <description>New RSS tutorial on W3Schools</description>
-  </item>
-  <item>
-    <title>XML Tutorial</title>
-    <link>https://www.w3schools.com/xml</link>
-    <description>New XML tutorial on W3Schools</description>
-  </item>
-</channel>
-
-</rss>';
-echo $rss;*/
