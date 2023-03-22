@@ -28,11 +28,14 @@ for ($i = 0; $i < 5; $i++) {
         echo "\ntop stories not available! connection issue?";
         continue;
     }
-
     $rss_item .= "\n<item>
     <title>" . $top_story_details->title . "</title>
     <link>" . $top_story_details->url . "</link>
     <description>" . 'type: ' . $top_story_details->type . ', score: ' . $top_story_details->score . "</description>
+    <dc:creator>" . $top_story_details->by . "</dc:creator>
+    <category>" . $top_story_details->type . "</category>
+    <guid isPermaLink='false'>" . $top_story_details->id . "</guid>
+    <pubDate>" . date(DateTime::RFC822, $top_story_details->time) . "</pubDate>
   </item>";
 }
 
